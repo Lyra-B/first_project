@@ -9,20 +9,19 @@
 //
 // Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
 // about supported directives.
-require modernizr - 2.8.3
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
 
-$(function() {
+ $(function() {
 	$( "#comments" ).hide();
-	$( "#show_comments" ).click(function(){
-		$( "#comments" ).slideDown();
-		$( this ).hide('normal');
-	});
-	$( "#hide_comments" ).click(function(){
-		$( "#comments" ).slideUp();
-		$( "#show_comments" ).show('normal');
-	});
-})
+ 	$( "#show_comments" ).click(function(){
+ 		$( "#comments" ).slideDown();
+ 		$( this ).hide('normal');
+ 	});
+ 	$( "#hide_comments" ).click(function(){
+ 		$( "#comments" ).slideUp();
+ 		$( "#show_comments" ).show('normal');
+ 	});
+ })
